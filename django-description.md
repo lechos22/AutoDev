@@ -1,8 +1,10 @@
-Django, a high-level Python web framework, follows the "batteries-included" philosophy,
+# Django
+
+Django is a high-level Python web framework, follows the "batteries-included" philosophy,
 offering a range of ready-to-use components for building robust web applications. 
 Here are its core ideas and file structure:
 
-### Core Ideas
+## Core Ideas
 
 1. **MTV (Model-Template-View) Architecture**: Similar to MVC (Model-View-Controller), Django uses:
    - **Model**: Defines the data structure. It is a Python class that maps to a database table.
@@ -21,7 +23,7 @@ Here are its core ideas and file structure:
 
 7. **Versatility**: Suitable for building various types of web applications, from content management systems to social networks.
 
-### File Structure
+## File Structure
 
 A Django project typically contains the following structure:
 
