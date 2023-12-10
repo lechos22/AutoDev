@@ -1,0 +1,19 @@
+dev-assistant:
+  project-path: './Django-School-Management-System'
+  context:
+    project-node-id: 1
+
+open-ai:
+  endpoint: 'https://team2-hacaton.openai.azure.com/'
+  api-key: '$secret:openai-api-key'
+  deployment: 'gpt4-32k'
+  embeddings-deployment: 'ada'
+  api-version: '2023-05-15'
+
+neo4j:
+  connection:
+    url: 'bolt://localhost:7687'
+    username: 'neo4j'
+    password: '$secret:neo4j-password'
+  vector-store:
+    index-name: 'default'
