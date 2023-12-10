@@ -20,6 +20,7 @@ Nasz projekt jest wyraźnie podzielony na części, dzięki czemu jego utrzymywa
 ## Demo
 
 Demo placekAI pozwala na:
+
 - Pobieranie informacji z plików projektu obsługiwanego przez nasz system.
 - Odpowiedź na pytania dotyczące technologii, architektury oraz działania kodu w projekcie
 - Generowanie fragmentów kodu dotyczące nowych i obecnych funkcjonalności w repozytorium
