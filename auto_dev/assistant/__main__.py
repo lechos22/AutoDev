@@ -1,6 +1,6 @@
-from auto_dev import assistant
+from auto_dev.assistant import questions_assistant
 
 while True:
     query = input("Question: ")
-    answer = assistant.answer_question(query)
+    answer = questions_assistant.answer_question(query)
     print(f"Answer: {answer}")
