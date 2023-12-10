@@ -3,7 +3,7 @@ import json
 import tiktoken
 from langchain_core.documents import Document
 
-from auto_dev.context_generator.types import CodeFragmentData
+from auto_dev.context_generator.context_types import CodeFragmentData
 
 
 def parse_code_fragment_document(fragment: CodeFragmentData, tiktoken_encoding: tiktoken.Encoding

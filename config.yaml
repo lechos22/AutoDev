@@ -12,7 +12,7 @@ open-ai:
 
 neo4j:
   connection:
-    url: 'bolt://localhost:7687'
+    url: 'bolt://192.168.153.231:7687'
     username: 'neo4j'
     password: '$secret:neo4j-password'
   vector-store:

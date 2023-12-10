@@ -21,7 +21,6 @@ dependencies = [
     "numpy~=1.26.2",
     "packaging~=23.2",
     "zipp~=3.17.0",
-    "PyGithub",
     "neo4j~=5.15.0",
     "findimports~=2.3.0",
 ]

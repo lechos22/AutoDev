@@ -26,7 +26,7 @@ def list_path(path: str) -> str:
 
 
 @tool
-def file_head(path: str) -> str:
+def file_part(path: str) -> str:
     """Useful for reading a maximum of first 10 lines of a file."""
     try:
         path = os.path.realpath(os.path.join(ANALYZED_PROJECT_PATH, path))
@@ -58,3 +58,21 @@ def file_summary(path: str) -> str:
         })
     except Exception as error:
         return repr(error)
+
+
+@tool
+def read_class(path: str) -> str:
+    """Useful for reading a class from given path in format <path>#<ClassName>."""
+    try:
+        path, class_name = path.split("#")
+        path = os.path.realpath(os.path.join(ANALYZED_PROJECT_PATH, path))
+        if not path.startswith(ANALYZED_PROJECT_PATH):
+            raise RuntimeError("Unauthorized")
+        if not os.path.isfile(path):
+            raise RuntimeError("Not a text file")
+        with open(path) as file:
+            text = file.read()
+        tree = ast.parse(text)
+        return repr([ast.unparse(node) for node in ast.iter_child_nodes(tree) if isinstance(node, ast.ClassDef) and node.name == class_name])
+    except Exception as e:
+        return repr(e)

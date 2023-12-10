@@ -10,7 +10,7 @@ from auto_dev.common.custom_blob_loaders.improved_file_system_blob_loader import
 from auto_dev.common.vector_store_interface import VectorStoreInterface
 from auto_dev.context_generator import document_parsing, llm_prompt_templates
 from auto_dev.context_generator.graph_db_proxy import GraphDBProxy
-from auto_dev.context_generator.types import CodeFragmentData
+from auto_dev.context_generator.context_types import CodeFragmentData
 
 from auto_dev import config
 
