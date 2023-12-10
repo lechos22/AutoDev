@@ -26,7 +26,7 @@ class ContextGenerator:
         self.__chat_model = AzureChatOpenAI(
             api_key=openai_config['api-key'],
             azure_endpoint=openai_config['endpoint'],
-            azure_deployment=openai_config['chat-llm-deployment'],
+            azure_deployment=openai_config['deployment'],
             api_version=openai_config['api-version'],
             temperature=0.0
         )
